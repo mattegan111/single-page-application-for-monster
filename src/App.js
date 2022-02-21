@@ -1,13 +1,14 @@
 import './App.css';
 import Sidebar from './Sidebar';
+import DashboardPage from './DashboardPage';
+import UsersPage from './UsersPage';
 
 function App() {
-  const loggedUser = 'Monster';
-
   return (
     <div className="App">
       <Sidebar />
-      <h1>Welcome {loggedUser}</h1>
+      <DashboardPage />
+      <UsersPage />
     </div>
   );
 }
