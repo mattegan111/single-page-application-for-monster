@@ -4,7 +4,7 @@ function DashboardPage(props) {
 
     return (
         <div>
-            <h1>DashboardPage for {loggedUser}</h1>
+            <h1>Welcome, {loggedUser}</h1>
         </div>
     );
 }
