@@ -1,8 +1,18 @@
+import {Link} from "react-router-dom";
+
 function Sidebar(props) {
     return (
     <div>
-        <h1>Fake Link 'Dashboard'</h1>
-        <h1>Fake Link 'Users'</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Dashboard</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
     </div>
     );
 }

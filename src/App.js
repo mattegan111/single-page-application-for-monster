@@ -12,8 +12,8 @@ import {
 function App() {
   return (
     <div className="App">
-      <Sidebar />
       <Router>
+        <Sidebar />
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/users" element={<UsersPage />} />
