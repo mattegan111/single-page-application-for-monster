@@ -33,12 +33,15 @@ function TableComponent() {
     return (
     <div>
         <h1>UsersPage</h1>
-        <label for="field-select">Sort:</label>
-        <select name="field-select" value={sortedField} onChange={handleOnChange}>
-            <option value="first_name">First Name</option>
-            <option value="email">Email</option>
-            <option value="subscription.status">Status</option>
-        </select>
+        <label>
+            Sort:
+            <select name="field-select" value={sortedField} onChange={handleOnChange}>
+                <option value="first_name">First Name</option>
+                <option value="email">Email</option>
+                <option value="subscription.status">Status</option>
+            </select>
+        </label>
+
         <table>
             <thead>
                 <tr>
